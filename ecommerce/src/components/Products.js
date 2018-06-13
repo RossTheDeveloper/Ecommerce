@@ -14,8 +14,6 @@ class Products extends Component{
       <Link key={each.id} className="Product-Wrap" to={`/product/${each.id}`}>
       <Product
       product={each}
-      mouseOver={this.props.mouseOver}
-      mouseOut={this.props.mouseOut}
       modal={() => this.props.modal(true)}
       modalPhoto={(e) => this.props.modalPhoto(e)}
       />

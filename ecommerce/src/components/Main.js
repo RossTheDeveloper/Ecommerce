@@ -71,24 +71,6 @@ class Main extends Component {
   }
 
 
-  viewOver = (product) => {
-    let products = this.state.products;
-    products[product.id].view = 'view-1';
-
-    this.setState({
-      products
-    })
-  }
-
-  viewOut = (product) => {
-    let products = this.state.products;
-    products[product.id].view = 'view-2';
-
-    this.setState({
-      products,
-    });
-  }
-
   modal = (e) => {
 
     this.setState({

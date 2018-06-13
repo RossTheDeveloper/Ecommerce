@@ -105,12 +105,12 @@ ul li{
   width:50%;
   color:blue;
   font-size: 1.5em;
-  background: pink;
+  background: lightblue;
   z-index: 1000;
 }
 
 .sugg ul li {
-  color: blue;
+  color: black;
 
 }
 
