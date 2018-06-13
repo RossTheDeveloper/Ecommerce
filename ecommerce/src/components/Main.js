@@ -105,13 +105,15 @@ class Main extends Component {
 
   filterClick = (e) => {
     let {filter, type} = e.target.dataset
-    this.setState({[filter]: type})
 
     this.setState((prevState) => {
       if(prevState.filters.includes(filter)) {
-        return
+        return {[filter]: type}
       } else {
-      return {filters: [...prevState.filters, filter]}
+          return {
+            [filter]: type,
+            filters: [...prevState.filters, filter]
+          }
       }
     })
   }
