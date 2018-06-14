@@ -7,19 +7,12 @@ import {FaClose } from 'react-icons/lib/fa'
 
 class Modal extends Component {
 
-
-
   closeModal = (img) => {
     this.props.modal(false)
   }
 
-
   render(){
-
-
-
     return(
-
         <div className={(this.props.status) ? "modal-container2": "modal-container"}>
           <div className="modal">
             <img id="modal-img" src={this.props.photo} alt="img" />

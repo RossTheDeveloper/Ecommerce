@@ -42,14 +42,14 @@ state={
 
 change = () => {
   if(this.search.value){
-  const filt1 = this.state.products.filter((each)=>{
-    return each.name.toLowerCase().indexOf(this.search.value.toLowerCase()) !== -1
+    const filt1 = this.state.products.filter((each)=>{
+      return each.name.toLowerCase().indexOf(this.search.value.toLowerCase()) !== -1
   })
 
   this.setState({filtered:filt1.slice(0,7)})
 
   } else if (!this.search.value) {
-    this.setState({filtered:[]})
+      this.setState({filtered:[]})
     }
 }
 
@@ -58,7 +58,7 @@ searchOff = () => {
 }
 
   render(){
-  return(
+    return(
       <div className="searchFix">
           <form >
               <input autoFocus className="mainSearch"

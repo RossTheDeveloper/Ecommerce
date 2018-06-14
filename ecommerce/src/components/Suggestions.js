@@ -12,7 +12,7 @@ const Suggestions = (props) => {
 
   return <div className={(props.results.length !== 0)? "sugg": "sugg2"}>
           <ul className="suggestionList">{options}</ul>
-          </div>
+         </div>
 }
 
 export default Suggestions

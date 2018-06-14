@@ -11,10 +11,10 @@ class Search extends Component {
   render(){
     return(
     <div className="searchForm0">
-    <form className="SearchForm">
-      <input  ref={input => this.search = input} type="search" name="search" placeholder="Search Product..." value={this.props.value}
-      onChange={this.handleChange} />
-    </form>
+      <form className="SearchForm">
+        <input  ref={input => this.search = input} type="search" name="search" placeholder="Search Product..." value={this.props.value}
+        onChange={this.handleChange} />
+      </form>
     </div>
     )
   }

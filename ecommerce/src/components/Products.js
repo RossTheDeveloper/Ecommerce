@@ -5,27 +5,22 @@ import { Link } from 'react-router-dom';
 
 class Products extends Component{
 
-
   renderProducts = () => {
-
-
-
     return this.props.products.map((each) => (
       <Link key={each.id} className="Product-Wrap" to={`/product/${each.id}`}>
-      <Product
-      product={each}
-      modal={() => this.props.modal(true)}
-      modalPhoto={(e) => this.props.modalPhoto(e)}
-      />
+        <Product
+          product={each}
+          modal={() => this.props.modal(true)}
+          modalPhoto={(e) => this.props.modalPhoto(e)}
+        />
       </Link>
     ))
 }
 
   render() {
-
     return(
     <div className="Grid">
-    {this.renderProducts()}
+      {this.renderProducts()}
     </div>
     )
   }

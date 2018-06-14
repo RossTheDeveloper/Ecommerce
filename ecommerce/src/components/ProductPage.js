@@ -45,21 +45,19 @@ class ProductPage extends Component {
   };
 
   renderProduct = () => {
-    const chosen = parseInt(this.props.match.params.filter)
+    const chosen = Number(this.props.match.params.filter)
     return this.state.products.find(each => each.id === chosen)
 }
-
-
 
 render(){
   return (
     <div>
-    <ProductBar
-    product={this.renderProduct()}
-    />
+      <ProductBar
+      product={this.renderProduct()}
+      />
     </div>
-  );
-}
+    )
+  }
 }
 
 export default ProductPage;
